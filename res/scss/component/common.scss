@@ -1,14 +1,4 @@
 /** * common styles in this website * **/
-
-$text-color: #333;
-
-@mixin box-sizing ($sizing) {
-    -webkit-box-sizing:$sizing;     
-       -moz-box-sizing:$sizing;
-            box-sizing:$sizing;
-}
-
-
 body { color: $text-color; }
 
 /* header ----------------------------- */

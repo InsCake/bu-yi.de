@@ -1,3 +1,86 @@
+/* grid */
+/* flex tools */
+/* container --------------------------------- */
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 624px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 942px; } }
+@media (min-width: 1300px) {
+  .container {
+    width: 1260px; } }
+.row {
+  -webkit-display: flex;
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -12px; }
+
+/* card ------------------------------- */
+.card-flex {
+  flex: 1;
+  margin-right: 12px; }
+
+.card-1 {
+  width: 94px;
+  margin-right: 12px; }
+
+.card-2 {
+  width: 200px;
+  margin-right: 12px; }
+
+.card-3 {
+  width: 306px;
+  margin-right: 12px; }
+
+.card-4 {
+  width: 412px;
+  margin-right: 12px; }
+
+.card-5 {
+  width: 518px;
+  margin-right: 12px; }
+
+.card-6 {
+  width: 624px;
+  margin-right: 12px; }
+
+.card-7 {
+  width: 730px;
+  margin-right: 12px; }
+
+.card-8 {
+  width: 836px;
+  margin-right: 12px; }
+
+.card-9 {
+  width: 942px;
+  margin-right: 12px; }
+
+.card-10 {
+  width: 1048px;
+  margin-right: 12px; }
+
+.card-11 {
+  width: 1154px;
+  margin-right: 12px; }
+
+.card-12 {
+  width: 1260px;
+  margin-right: 12px; }
+
+.card-13 {
+  width: 1366px;
+  margin-right: 12px; }
+
+.card-14 {
+  width: 1472px;
+  margin-right: 12px; }
+
 /** * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) * Richard Clark (http://richclarkdesign.com) * http://cssreset.com */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
@@ -106,71 +189,14 @@ body {
 .page-content {
   margin-top: 50px; }
 
-/* flex tools */
-/* container --------------------------------- */
-.container {
-  margin-right: auto;
-  margin-left: auto; }
-
-@media (min-width: 768px) {
-  .container {
-    width: 790px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 950px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1110px; } }
-.row {
-  -webkit-display: flex;
-  display: flex;
-  flex-flow: row wrap; }
-
-/* card ------------------------------- */
-.card-flex {
-  flex: 1; }
-
-.card-1 {
-  width: 70px; }
-
-.card-2 {
-  width: 150px; }
-
-.card-3 {
-  width: 230px; }
-
-.card-4 {
-  width: 310px; }
-
-.card-5 {
-  width: 390px; }
-
-.card-6 {
-  width: 470px; }
-
-.card-7 {
-  width: 550px; }
-
-.card-8 {
-  width: 630px; }
-
-.card-9 {
-  width: 710px; }
-
-.card-10 {
-  width: 790px; }
-
-.card-11 {
-  width: 870px; }
-
-.card-12 {
-  width: 950px; }
-
-.card-13 {
-  width: 1030px; }
-
-.card-14 {
-  width: 1110px; }
-
 /* page home --------------------------------------- */
-/* subtitle */
+/* posts */
+.posts {
+  height: 300px; }
+  .posts .post-item {
+    height: 100%;
+    box-shadow: 0 1px 3px #aaa; }
+  .posts .post-item:hover {
+    box-shadow: 0 2px 10px #aaa;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
