@@ -1,0 +1,75 @@
+/* flex tools */
+ @mixin flex ($flow) {
+    -webkit-display: flex;
+    display: flex;
+    flex-flow: $flow;
+}
+/* container --------------------------------- */
+ .container {
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 790px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 950px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1110px;
+    }
+}
+.row {
+    @include flex(row wrap);
+}
+/* card ------------------------------- */
+ .card-flex {
+    flex: 1;
+}
+.card-1 {
+    width: 70px;
+}
+.card-2 {
+    width: 150px;
+}
+.card-3 {
+    width: 230px;
+}
+.card-4 {
+    width: 310px;
+}
+.card-5 {
+    width: 390px;
+}
+.card-6 {
+    width: 470px;
+}
+.card-7 {
+    width: 550px;
+}
+.card-8 {
+    width: 630px;
+}
+.card-9 {
+    width: 710px;
+}
+.card-10 {
+    width: 790px;
+}
+.card-11 {
+    width: 870px;
+}
+.card-12 {
+    width: 950px;
+}
+.card-13 {
+    width: 1030px;
+}
+.card-14 {
+    width: 1110px;
+}
