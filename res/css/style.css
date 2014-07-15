@@ -220,9 +220,10 @@ a:visited {
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8); }
   .site-footer .footer-icons {
-    letter-spacing: 10px;
     padding: 60px 0;
     text-align: center; }
+    .site-footer .footer-icons a {
+      margin: 0 5px; }
 
 /**/
 /* page home --------------------------------------- */
