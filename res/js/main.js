@@ -3,24 +3,26 @@ $(function() {
         posts_top = clientHeight / 2 - 155;
     // 初始化posts margin-top
     $('.posts').css({
-        'margin-top': posts_top
+        'padding-top': posts_top
     }).removeClass('none');
     // 初始化footer height
-    $('.site-footer').css({
-        'height': posts_top + 20
+    $('.toggle-footer').css({
+        'height': posts_top
     });
     $(document).on('scroll', function() {
+        var scroll_top = $(document).scrollTop();
         // post 滚入 header
-        if ($(document).scrollTop() > (posts_top - 90)) {
+        if (scroll_top > (posts_top - 90)) {
             $('.site-header').addClass('above');
         } else {
             $('.site-header').removeClass('above');
         }
         // footer toggle
-        if ($(document).scrollTop() > 5) {
-            $('.site-footer').fadeOut(500);
+        var toggle_footer = $('.toggle-footer');
+        if (scroll_top > 5) {
+            toggle_footer.fadeOut(300);
         } else {
-            $('.site-footer').fadeIn(300);
+            toggle_footer.fadeIn(300);
         }
     });
 });

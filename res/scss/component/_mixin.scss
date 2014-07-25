@@ -1,15 +1,23 @@
 /* flex tools */
- @mixin flex ($flow) {
+
+@mixin flex ($flow) {
     -webkit-display: flex;
     display: flex;
     flex-flow: $flow;
 }
 @mixin box-sizing ($sizing) {
-    -webkit-box-sizing:$sizing;
-    -moz-box-sizing:$sizing;
-    box-sizing:$sizing;
+    -webkit-box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    box-sizing: $sizing;
 }
 @mixin transition ($vars) {
     -webkit-transition: $vars;
     transition: $vars;
+}
+@mixin blur ($radius) {
+    -webkit-filter: blur($radius);
+    -moz-filter: blur($radius);
+    -o-filter: blur($radius);
+    -ms-filter: blur($radius);
+    filter: blur($radius);
 }

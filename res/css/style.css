@@ -76,84 +76,87 @@ input, select {
 
 @media (min-width: 768px) {
   .container {
-    width: 624px; } }
+    width: 616px; } }
 @media (min-width: 992px) {
   .container {
-    width: 942px; } }
+    width: 928px; } }
 @media (min-width: 1300px) {
   .container {
-    width: 1260px; } }
+    width: 1240px; } }
 .row {
   -webkit-display: flex;
   display: flex;
   flex-flow: row wrap;
-  margin-right: -12px; }
+  margin-right: -8px; }
 
 /* card ------------------------------- */
 .card-flex {
   flex: 1;
-  margin-right: 12px; }
+  margin-right: 8px; }
 
 .card-1 {
-  width: 94px;
-  margin-right: 12px; }
+  width: 96px;
+  margin-right: 8px; }
 
 .card-2 {
   width: 200px;
-  margin-right: 12px; }
+  margin-right: 8px; }
 
 .card-3 {
-  width: 306px;
-  margin-right: 12px; }
+  width: 304px;
+  margin-right: 8px; }
 
 .card-4 {
-  width: 412px;
-  margin-right: 12px; }
+  width: 408px;
+  margin-right: 8px; }
 
 .card-5 {
-  width: 518px;
-  margin-right: 12px; }
+  width: 512px;
+  margin-right: 8px; }
 
 .card-6 {
-  width: 624px;
-  margin-right: 12px; }
+  width: 616px;
+  margin-right: 8px; }
 
 .card-7 {
-  width: 730px;
-  margin-right: 12px; }
+  width: 720px;
+  margin-right: 8px; }
 
 .card-8 {
-  width: 836px;
-  margin-right: 12px; }
+  width: 824px;
+  margin-right: 8px; }
 
 .card-9 {
-  width: 942px;
-  margin-right: 12px; }
+  width: 928px;
+  margin-right: 8px; }
 
 .card-10 {
-  width: 1048px;
-  margin-right: 12px; }
+  width: 1032px;
+  margin-right: 8px; }
 
 .card-11 {
-  width: 1154px;
-  margin-right: 12px; }
+  width: 1136px;
+  margin-right: 8px; }
 
 .card-12 {
-  width: 1260px;
-  margin-right: 12px; }
+  width: 1240px;
+  margin-right: 8px; }
 
 .card-13 {
-  width: 1366px;
-  margin-right: 12px; }
+  width: 1344px;
+  margin-right: 8px; }
 
 .card-14 {
-  width: 1472px;
-  margin-right: 12px; }
+  width: 1448px;
+  margin-right: 8px; }
 
 /** * common styles in this website * **/
 body {
   font-family: Helvetica, Arial, sans-serif;
-  color: #333333; }
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+  background-color: #efefef; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
@@ -182,7 +185,8 @@ a:visited {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   .site-header .buuyii {
@@ -213,26 +217,59 @@ a:visited {
 .page-content {
   padding-bottom: 30px; }
 
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.8); }
-  .site-footer .footer-icons {
-    padding: 60px 0;
-    text-align: center; }
-    .site-footer .footer-icons a {
-      margin: 0 5px; }
-
-/**/
 /* page home --------------------------------------- */
 /* posts */
 .posts .post-item {
   margin-bottom: 40px;
-  height: 282px;
-  box-shadow: 0 1px 3px #bbb; }
+  height: 288px;
+  box-shadow: 0 1px 3px #bbb;
+  background-color: #fff; }
+  .posts .post-item h2 {
+    margin-bottom: 10px;
+    font-size: 32px; }
+  .posts .post-item .post-date {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: #666; }
+  .posts .post-item .post-author {
+    font-size: 12px;
+    color: #666; }
+    .posts .post-item .post-author a {
+      font-size: 14px; }
 .posts .post-item:hover {
   box-shadow: 0 2px 10px #bbb;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
+.posts .article {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px; }
+
+.toggle-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(239, 239, 239, 0.9); }
+  .toggle-footer .footer-icons {
+    padding: 40px 0;
+    text-align: center; }
+    .toggle-footer .footer-icons a {
+      margin: 0 5px; }
+
+/* post */
+.post {
+  padding: 80px 0 20px 0;
+  line-height: 1.5; }
+  .post .post-paper {
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #bbb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 120px; }

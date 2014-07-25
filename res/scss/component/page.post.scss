@@ -1,0 +1,13 @@
+/* post */
+
+.post {
+    padding: 80px 0 20px 0;
+    line-height: 1.5;
+    .post-paper {
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 1px 3px #bbb;
+        @include box-sizing(border-box);
+        padding: 40px 120px;
+    }
+}
