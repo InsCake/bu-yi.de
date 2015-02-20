@@ -1,8 +1,10 @@
+@charset "utf-8";
 
-@import 'component/base';
-@import 'component/_variable';
-@import 'component/_mixin';
-@import 'component/_skeleton';
-@import 'component/common';
-@import 'component/page.home';
-@import 'component/page.post';
+@import 'components/base';
+@import 'components/variable';
+@import 'components/mixin';
+@import 'components/skeleton';
+@import 'components/common';
+@import 'components/page.home';
+@import 'components/page.post';
+
